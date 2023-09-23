@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>for...in문</title>
+  </head>
+  <body>
+    <script language="javascript">
+      // 배열 선언 시 new Array() 작성
+      // * " " 은 null과 다른 것인가?
+      // for 정수가 반복
+      // for - in 배열 출력, 배열의 범위를 지정해 출력 -> 코드의 간결함
+
+      // 배열 생성 시 key 값을 주지 않을 경우, 자동으로 인덱스가 {key: value}에서 key가된다.
+      // 배열은 객체다.
+      var arr = new Array("사과", "바나나", "파인애플");
+      var b = " ";
+      for (var key in arr) {
+        b += "인덱스" + key + "의 값은 : " + arr[key] + "<br>";
+        // document.write("인덱스" + key + "의 값은 : " + arr[key] + "<br>");
+      }
+      document.write(b);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Q1</title>
+    <script language="javascript">
+      // 이동할 웹사이트 주소 입력
+      function move() {
+        var url = prompt("이동할 웹 사이트 주소를 입력하세요.", "http://");
+        document.location = url;
+      }
+    </script>
+  </head>
+  <body>
+    다음 이동 버튼을 클릭하여 이동할 웹 사이트 주소를 입력하세요
+    <br /><br />
+    <input type="button" value="이동" onclick="move()" />
+  </body>
+</html>

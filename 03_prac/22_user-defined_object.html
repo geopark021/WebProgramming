@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>사용자 정의 객체</title>
+    <script type="text/javascript">
+      // 함수를 익명함수로 사용해보자. 변수처럼 접근 가능해짐
+      function student(identity, name, department) {
+        this.id = identity;
+        this.name = name;
+        this.dept = department;
+
+        this.stInfo = function () {
+          return (
+            "학생정보: 이름은 " +
+            this.name +
+            "이고, 학과는 " +
+            this.dept +
+            "입니다."
+          );
+        };
+      }
+      st = new student("2014001", "김동국", "컴퓨터공학"); // 객체 정의
+    </script>
+  </head>
+
+  <body>
+    <h2>학생 정보 출력</h2>
+    <script type="text/javascript">
+      document.writeln("학번: " + st.id + "<br>");
+      document.writeln(st.stInfo() + "<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>hw02</title>
+  </head>
+  <body>
+    <div id="div1" onclick="change()">여긴 DIV1의 영역</div>
+    <div id="div2" onclick="addText()">여긴 DIV2의 영역</div>
+    <script type="text/javascript">
+      function change() {
+        document.getElementById("div1").style.color = "white"; // html 요소를 가져와 스타일 적용
+        document.getElementById("div1").style.backgroundColor = "black";
+      }
+      function addText() {
+        var result = document.getElementById("div2").value;
+        var addedText = document.createTextNode("div2의 영역이죠"); // 추가로 붙일 노드(요소)가 있다면 내용을 createTextNode로 추가한다. 반환값 object test
+        // 부모와 자식 노드를 연결
+        document.getElementById("div2").appendChild(addedText);
+      }
+
+      // * dom 객체가 모두 로드되기 전에 스크립트 실행으로 body가 아직 로드되지 않았을 수 도 있다.
+      // 새로운 노드 추가하기
+      var imgNode = document.createElement("img");
+      // 새로운 이미지 노드를 body 에 연결
+      // 속성 설정
+      imgNode.setAttribute("src", "images/Q2_back.JPG");
+      imgNode.setAttribute("width", "width");
+      document.body.appendChild(imgNode);
+    </script>
+  </body>
+</html>

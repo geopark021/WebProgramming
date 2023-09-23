@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>document 객체 사용 예</title>
+    <script language="javascript">
+      document.title = "document 객체 사용 예";
+      document.write(
+        "현재 문서의 제목은 " + document.title + "입니다." + "<br><br>"
+      );
+      document.write(
+        "현재 문서를 마직막으로 수정한 시간은 " +
+          document.lastModified +
+          "입니다." +
+          "<br><br>"
+      );
+      document.write(
+        "현재 문서의 위치는 " + document.URL + "입니다." + "<br><br>"
+      );
+      function url() {
+        document.location = "http://www.w3.org";
+      }
+    </script>
+  </head>
+  <body>
+    <h3>W3C 웹 페이지로 이동하려면 다음의 확인버튼을 누르세요.</h3>
+    <input type="button" value="이동" onclick="url()" /><br />
+  </body>
+</html>

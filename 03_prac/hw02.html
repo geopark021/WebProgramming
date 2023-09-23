@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Q2</title>
+  </head>
+  <style>
+    #div1 {
+      background-color: white;
+      color: black;
+    }
+  </style>
+
+  <body>
+    <div id="div1">여긴 DIV1영역</div>
+    <div id="div2">여긴 DIV2영역</div>
+
+    <script type="text/javascript">
+      // div1 클릭할 때 배경 검은색, 글자 흰색 변경
+      document.getElementById("div1").onclick = function () {
+        div1.style.backgroundColor = "black";
+        div1.style.color = "white";
+      };
+      // div2 클릭할 때마다 글자 추가
+      document.getElementById("div2").onclick = function () {
+        var text = document.createTextNode("div2의 영역이죠");
+        var original = document.getElementById("div2");
+        original.appendChild(text);
+      };
+
+      // 이미지 요소 노드 생성
+      var image = document.createElement("img");
+
+      // 이미지 요소 속성 정의
+      image.setAttribute("src", "images/Q2_back.JPG");
+      image.setAttribute("width", "100%");
+
+      // 이미지 노드 body에 추가
+      document.body.appendChild(image);
+    </script>
+  </body>
+</html>

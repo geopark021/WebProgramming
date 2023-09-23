@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>do while문</title>
+  </head>
+  <body>
+    <script language="javascript">
+      // 태그 반복, 속성값 변화 가능
+      var i = 1;
+      document.write("1~20까지의 짝수만 출력한 결과는?" + "<br><br>");
+
+      do {
+        if (i % 2 == 0) {
+          document.write(i);
+          document.write("<br>");
+        }
+        i++; // 증감 연산자 필수. 주의. if 문에 넣으면 홀수 일 때는 증감을 할 수 없으므로 if문 밖에 증감연산자 작성
+      } while (i <= 20);
+    </script>
+  </body>
+</html>

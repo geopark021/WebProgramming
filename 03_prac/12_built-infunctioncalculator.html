@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>수식 계산하기</title>
+  </head>
+  <body>
+    <h1>간단한 계산</h1>
+    <br /><br />
+    <!--입력한 값을 동적으로 브라우저에 보이고 싶으면 script 태그에 작성 -->
+    <script language="javascript">
+      // var 정수만저장
+      var input = prompt("수식을 입력하세요!"); // string값으로 입력값 반환
+      document.write(
+        "수식(수식 입력) : " +
+          input +
+          " = <font color='red'> " +
+          eval(input) +
+          "</font><br>"
+      );
+      var a = prompt("첫번째 수를 입력하세요!");
+      var b = prompt("두번째 수를 입력하세요!");
+      var c = a + b;
+      var d = parseInt(a) + parseInt(b);
+      var e = parseFloat(a) + parseFloat(b);
+
+      document.write(
+        "수식(문자): " +
+          a +
+          " + " +
+          b +
+          " = <font color='red'>" +
+          c +
+          "</font> <br>"
+      );
+      document.write(
+        "수식(Int): " +
+          a +
+          " + " +
+          b +
+          " = <font color='red'>" +
+          d +
+          "</font> <br>"
+      );
+      document.write(
+        "수식(Float): " +
+          a +
+          " + " +
+          b +
+          " = <font color='red'>" +
+          e +
+          "</font> <br>"
+      );
+
+      // eval() 인자가 문자열로 된 경우 값을 평가(계산)해 계산된 값을 반환한다.
+    </script>
+  </body>
+</html>
