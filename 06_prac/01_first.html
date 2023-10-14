@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>first html</title>
+    <meta http-equiv="Content-Type" conten="text/html" ; charset="utf=8" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // 일반적인 구조(구현)
+        // DOM이 로딩되어서 준비가 되면 작업을 시작
+        // 이후 구체적으로 jQuery 메소드를 호출
+        $("button").click(function () {
+          // button 에 클릭 이벤트가 발생하면
+          alert($("#pic").attr("src")); // id가 "pic"인 요소의 src 속성 값을 얻어 alert창 작동
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <img
+      id="pic"
+      src="Images/pikachu.JPG"
+      alt="피카츄입니다."
+      width="500"
+      height="500"
+    /><br /><br />
+    <button>버튼을 눌러보세요.</button>
+  </body>
+</html>

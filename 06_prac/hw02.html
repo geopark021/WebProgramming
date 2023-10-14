@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>문제 2번</title>
+    <style></style>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn_start").click(function () {
+          $("#img_1").show("slow").toggle("fast").slideDown("slow");
+        });
+        $("#btn_stop").click(function () {
+          $("#img_1").hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn_start">시작</button>
+    <button id="btn_stop">정지</button>
+    <br /><br />
+    <img id="img_1" src="Images/1.PNG" style="display: none" />
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>second html</title>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // 일반적인 구조 (구현)
+        // dom이 로딩되어서 준비가 되면 작업을 시작
+        // 이후 구체적으로 jQuery 메소드들을 호출
+        $("button").click(function () {
+          alert($("#pic").attr("alt")); // id가 pic인 요소의 alt 값을 가져와서 alert창 작동
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img
+      id="pic"
+      src="Images/pikachu2.JPG"
+      alt="피카츄입니다"
+      width="500"
+      height="500"
+    />
+    <br /><br />
+    <button>버튼을 눌러보세요.</button>
+  </body>
+</html>

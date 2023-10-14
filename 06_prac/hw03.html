@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>문제3번</title>
+    <style>
+      #container a,
+      #container button {
+        display: inline-block;
+      }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // url 변경 버튼 클릭 후 페이지 이동 클릭 시 중앙도서관 홈페이지로 이동
+        $("#btn_changeUrl").click(function () {
+          $("#movePage").attr("href", "https://lib.dongguk.edu");
+        });
+
+        // 사진 변경
+        $("#btn_changeImg").click(function () {
+          $("#img").attr("src", "Images/2.PNG");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <a id="movePage" href="https://www.dongguk.edu">페이지 이동</a>
+      <button id="btn_changeUrl">URL 변경</button>
+    </div>
+    <br />
+    <img id="img" src="Images/1.PNG" />
+    <br />
+    <button id="btn_changeImg">사진 변경</button>
+  </body>
+</html>
