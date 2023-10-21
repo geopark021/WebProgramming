@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>연산자</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      //연산은 코드상에서 계산해 출력
+      // 관계:  누가 더 큰가, 작은가
+      // 문자열 연산: 문자열 합치기 가능
+      var a, b, x, y;
+      a = 7;
+      b = 3;
+      c = true; // var 없이 변수 선언 : 전역 변수
+      d = false;
+      e = "hybrid";
+      f = "car";
+      document.write("<b>산술 연산</b><br><br> ");
+      document.write(a + " + " + b + " = " + (a + b) + "<br>");
+      document.write(a + " * " + b + " = " + a * b + "<br>");
+      document.write(a + " / " + b + " = " + a / b + "<br>");
+      document.write(a + " % " + b + " = " + (a % b) + "<br>");
+
+      document.write("<br><br>");
+      document.write("<b>관계 연산</b><br><br> ");
+      document.write(a + " > " + b + " ==>" + (a > b) + "<br>");
+      document.write(a + " < " + b + " ==> " + (a < b) + "<br>");
+      document.write(a + " == " + b + " ==> " + (a == b) + "<br>");
+
+      document.write("<br><br>");
+      document.write("<b>논리 연산</b><br><br> ");
+      document.write(c + " && " + d + " ==>" + (a > b) + "<br>");
+      document.write(c + " || " + d + " ==> " + (a < b) + "<br>");
+      document.write("!" + c + " ==> " + !c + "<br>");
+
+      document.write("<br><br>");
+      document.write("<b>문자열 연산</b><br><br> ");
+      document.write(e + " + " + f + " ==>" + (e + f) + "<br>"); // 문자열 합치기 + 연산자로 가능
+    </script>
+  </body>
+</html>

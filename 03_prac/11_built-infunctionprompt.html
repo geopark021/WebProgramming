@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>프롬프트 대화상자(dialog) 나타내기</title>
+  </head>
+  <body>
+    <script language="javascript">
+      // 대화상자는 대화할 공간이 있다.
+      var input = prompt("당신은 누구십니까?", "이름을 입력해주세요"); // message, defaultValue힌트를 주어 대답하도록 유도
+      // 결과값은 string. 형변환 필요할 수 있다.
+      document.write("<br/>");
+      document.write("<b>" + input + "</b>님의 방문을 진심으로 환영합니다. ");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>history 객체 사용 예</title>
+  </head>
+  <script type="text/javascript">
+    // history 객체: 사용자가 브라우저를 통해 이동한 페이지를 기록해둔 객체
+    // forward 기록된 다음 페이지로 감
+    // back 기록된 이전페이지로 감
+    function history_back() {
+      history.back();
+    }
+    function history_forward() {
+      history.forward();
+    }
+  </script>
+  <body>
+    <form>
+      <h3>이전 페이지로 이동하기</h3>
+      <input
+        type="button"
+        value="이전으로 이동"
+        onclick="history_back()"
+      /><br />
+      <h3>다음 페이지로 이동하기</h3>
+      <!--버튼은 클릭했을 때 사용자의 클릭 동작에 반응하기 위한것이므로 값을 저장하는 것은 일반적이지 않다.-->
+      <input
+        type="button"
+        value="다음으로 이동"
+        onclick="history_forward()"
+      /><br />
+    </form>
+  </body>
+</html>

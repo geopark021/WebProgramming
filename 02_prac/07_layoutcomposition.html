@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charse=euc-kr" />
+    <title>레이아웃 속성</title>
+    <style type="text/css">
+      body {
+        text-align: center;
+        color: #fff;
+        width: 900px;
+      }
+
+      div#wrapper {
+        width: 100%;
+        min-height: 300px; /* 반응형 웹페이지에서 너무작아서 콘텐츠를 못 읽는 것을 방지 */
+        text-align: left;
+        margin: 0 auto; /* 위아래, 양옆*/
+      }
+
+      header,
+      footer,
+      nav,
+      aside,
+      section {
+        border: 1px solid #999;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      header {
+        height: 50px;
+        background-color: red;
+      }
+      nav,
+      section,
+      aside {
+        float: left; /*해당 태그의 컨테이너 안에서 왼쪽으로 위치시킴*/
+        height: 500px;
+      }
+
+      nav {
+        background-color: goldenrod;
+        width: 100px;
+      }
+      section {
+        background-color: green;
+        width: 600px;
+      }
+      aside {
+        background-color: goldenrod;
+        width: 100px;
+      }
+      footer {
+        height: 50px;
+        background-color: blue;
+        position: relative; /**/
+        clear: both; /* float 속성을 가진 요소들 아래로 배치. 레이아웃 유지 목적*/
+      }
+      article {
+        width: 90%;
+        margin: 20px;
+        background-color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header><p>header</p></header>
+      <nav>
+        <p>nav</p>
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+      <section>
+        <p>section</p>
+        <article><p>article</p></article>
+        <article><p>article</p></article>
+      </section>
+      <aside>
+        <p>aside</p>
+      </aside>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

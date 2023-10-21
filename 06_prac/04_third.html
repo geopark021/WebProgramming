@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>third html</title>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <button>Show it</button>
+    <img
+      id="new"
+      src="Images/turtle.JPG"
+      width="500"
+      height="500"
+      style="display: none"
+    />
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#new").show("slow"); // id가 new 요소에 show 메소드 적용
+          // show()는 선택된 요소를 표시한다. js에는 show()메소드 없음
+        });
+      });
+    </script>
+  </body>
+</html>

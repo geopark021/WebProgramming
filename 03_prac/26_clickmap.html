@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>클릭하면 나타나는 지도</title>
+  </head>
+  <meta charset="utf-8" />
+  <style>
+    #title {
+      position: absolute;
+      left: 15;
+      top: 30;
+    }
+    #map {
+      position: absolute;
+      left: 250;
+      top: 250;
+      visibility: hidden;
+    }
+  </style>
+  <script type="text/javascript">
+    function changeMap() {
+      if (map.style.visibility == "visible") {
+        map.style.visibility = "hidden";
+      } else {
+        map.style.visibility = "visible";
+      }
+    }
+  </script>
+  <body>
+    <div id="title">
+      <a href="JavaScript:changeMap()">
+        <img src="images/title.jpg" border="0" />
+      </a>
+      <div id="map">
+        <img src="images/map.jpg" />
+      </div>
+    </div>
+  </body>
+</html>

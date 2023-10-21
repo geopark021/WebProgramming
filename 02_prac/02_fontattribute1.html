@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>글꼴 정의</title>
+    <style type="text/css">
+      @font-face {
+        /* 화면에 보여줄 custom font를 명시. 원격 서버나 로컬에 설치된 폰트로 부터 로딩됨. */
+        font-family: NanumPen;
+        src: url("NanumPen.ttf") format("truetype");
+      }
+      h2 {
+        color: blue;
+        font-family: NanumPen; /* 폰트를 로딩했으므로 사용 가능 */
+        font-size: 30pt;
+      }
+      p {
+        color: red;
+        font-size: 30pt;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>안녕하세요</h2>
+    <p>안녕하세요</p>
+  </body>
+</html>
+<!-- 폰트가 없는 경우 @font-face 이용 -->

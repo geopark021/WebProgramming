@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>event html</title>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script>
+      // jquery 코드가 문서 로딩이 완료되기 전에 실행되는 것을 막기 위해 jquery 코드가 문서 ready 이벤트 내부에 존재한다
+      // 객체
+      $(document).ready(function () {
+        $(".box").mouseenter(function () {
+          $(".word").text("마우스 포인터가 안에 있습니다.");
+        });
+        $(".box").mouseleave(function () {
+          $(".word").text("마우스 포인터가 밖에 있습니다 ");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div></div>
+    <div
+      class="box"
+      style="width: 200px; height: 200px; background-color: indianred"
+    ></div>
+    <p class="word">박스에 마우스 포인터를 올리고 내려보세요.</p>
+  </body>
+</html>

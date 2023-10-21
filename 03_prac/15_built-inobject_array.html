@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Array 객체</title>
+  </head>
+  <body>
+    <script language="javascript">
+      // join 내장객체  기본값. 쉼표
+      // concat 합치기
+      var title = new Array(3); // 길이가 3인 배열 생성. 각 배열원소는 undefined로 초기화
+      // js에서 배열은 1. 여러 자료형 보유 가능 2. 크기 재조정 가능
+      title[0] = "W";
+      title[1] = "e";
+      title[2] = "b";
+
+      // join은 array의 멤버 함수로서, 새로운 문자열을 생성하고, 반환.
+      // 지정된 기호로 배열의 원소를 이어서 새로운 문자열을 생성하고 반환. default 기호 :  콤마
+      var title2 = title.join(".");
+      var title3 = new Array(" Programming");
+
+      // concat() : 문자열 인자들을 이 문자열에 연결하고 새로운 문자열을 생성해 반환
+      var title4 = title2.concat(title3);
+      document.write("첫번째 책 제목은 ");
+      for (i = 0; i < title.length; i++) {
+        // length : 자바스크립트에서 배열은 문자열의 끝 null 제외한 실 문자열 개수 반환
+        document.write(title[i]);
+      }
+
+      document.write(
+        "입니다. <br> 두번째 책 제목은 " + title4 + "입니다. <br>"
+      );
+    </script>
+  </body>
+</html>

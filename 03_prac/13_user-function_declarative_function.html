@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>함수</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // script language="javascript" 오래된 속성으로 현재 html표준에서 사용x. type속성 이용.
+      function sum(x, y) {
+        var z = x + y;
+        return z;
+      }
+
+      var a = 10;
+      var b = 20;
+      var result = 0;
+
+      document.write("<h2>함수 호출 -선언</h2><br>");
+      result = sum(a, b); // a, b는 전역변수
+      document.writeln(result); // 줄 바꿈 추가해줌 새로운 줄
+    </script>
+  </body>
+</html>

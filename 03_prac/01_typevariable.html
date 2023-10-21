@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>지역변수 및 전역변수</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      // var 전역 변수(함수 밖에서 사용가능) 선언 과 초기화
+      a = 2; // var 키워드 없이 변수 선언하면, 자동으로 전역변수로 선언됨.
+      b = 7;
+      var d = 0;
+      document.write("d의 값은: " + d + "이다. " + "<br>");
+      function add() {
+        var a = 4; // 지역변수
+        c = 6; // var 키워드가 없으면 전역변수로 선언
+        d = 3;
+        document.write("a + b + c의 값은: " + (a + b + c) + "이다." + "<br>");
+        // 전역변수로 선언한 a 때문에 a = 4로 변함  b = 7,  c = 6
+      }
+      add();
+      document.write("a + b + c의 값은: " + (a + b + c) + "이다." + "<br>");
+      // a = 2, b = 7, c = 6 a 는 전역변수
+      document.write("d의 값은: " + d + "이다. " + "<br>");
+    </script>
+  </body>
+</html>

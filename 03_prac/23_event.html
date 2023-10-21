@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>이미지 변환 예제</title>
+  </head>
+  <body onload="alert('버튼을 누르세요')">
+    <center>
+      <h2>변하는 단추 이미지</h2>
+      <a
+        href="#"
+        onMouseOver="document.images[0].src='images/down.jpg'"
+        onMouseOut="document.images[0].src='images/up.jpg'"
+      >
+        <img src="images/up.jpg" border="0"
+      </a>
+      <p>
+        <!--이미지와 문장을 세로로 가운데 위치하기 위함 -->
+        <b> 버튼이 눌린것처럼 보이나요?</b>
+      </p>
+    </center>
+  </body>
+</html>

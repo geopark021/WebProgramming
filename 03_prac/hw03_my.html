@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>hw03</title>
+    <style>
+      #map_img {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!--name으로 같은 값을 줘야 radio 버튼의 선택이 1개만 된다. -->
+    <input type="radio" name="map" checked onclick="show()" />숨기기
+    <input type="radio" name="map" onclick="show()" /> 보이기
+    <br />
+    <img id="map_img" src="images/Q3_map.jpg" />
+    <script>
+      function show() {
+        var map_img = document.getElementById("map_img");
+        if (map_img.style.visibility == "visible") {
+          map_img.style.visibility = "hidden";
+        } else {
+          map_img.style.visibility = "visible";
+        }
+      }
+    </script>
+  </body>
+</html>

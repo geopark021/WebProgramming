@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>문제1번</title>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+    <meta http-equiv="Content-Type" conten="text/html" ; charset="utf=8" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn_zoomin").click(function () {
+          $("#box").css("width", 200); // 상자 확대를 클릭했을 때 너비가 2배 늘어남
+        });
+
+        $("#btn_zoomout").click(function () {
+          $("#box").css("width", 50); // 상자 축소를 클릭했을 때 너비가 반으로 줄어듦
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="box"></div>
+    <br />
+    <button id="btn_zoomin">상자확대</button>
+    <button id="btn_zoomout">상자축소</button>
+  </body>
+</html>

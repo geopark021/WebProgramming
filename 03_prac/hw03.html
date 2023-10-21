@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Q3</title>
+  </head>
+  <body>
+    <label></label><input id="look" type="radio" name="map" value="invisible" checked/> 숨기기</label>
+    <label> <input type="radio" name="map" value="visible" /> 보이기</label><br>
+    <img id='map_image'src="images/Q3_map.jpg" style="display: none;">
+    <script>
+     document.querySelector('input[value="visible"]').addEventListener('click', function() {
+        document.getElementById('map_image').style.display = 'block';
+      });
+      document.querySelector('input[value="invisible"]').addEventListener('click', function() {
+        document.getElementById('map_image').style.display = 'none';
+      });
+    </script>
+  </body>
+</html>

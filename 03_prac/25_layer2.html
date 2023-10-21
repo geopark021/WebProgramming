@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>레이어의 위치바꾸기</title>
+    <script type="text/javascript">
+      function layer1() {
+        document.getElementById("bus").style.left = 40;
+        document.getElementById("bus").style.top = 20; //압구정역
+      }
+      function layer2() {
+        document.getElementById("bus").style.left = 400;
+        document.getElementById("bus").style.top = 130; // 압구정로
+      }
+      function layer3() {
+        document.getElementById("bus").style.left = 240;
+        document.getElementById("bus").style.top = 300; // 선릉로
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <p><img src="images/map.jpg" /></p>
+      <div
+        id="bus"
+        style="position: absolute; top: 90; left: 290; width: 50; height: 50"
+      >
+        <p><img src="images/bus.jpg" /></p>
+      </div>
+      <form>
+        <p>
+          <input type="button" value="압구정역" onclick="layer1()" />
+          <input type="button" value="압구정로" onclick="layer2()" />
+          <input type="button" value="선릉로" onclick="layer3()" />
+        </p>
+      </form>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>마우스 관련 선택자</title>
+    <style type="text/css">
+      a:link {
+        /* 반응 선택자*/
+        background-color: red;
+      }
+      a:visited {
+        background-color: yellow;
+      }
+      a:hover {
+        /* 마우스 커서를 올린 태그 선택 */
+        background-color: skyblue;
+      }
+      a:active {
+        background-color: green;
+      } /*마우스 클릭한 태그 선택*/
+
+      div {
+        position: absolute;
+        background-color: red;
+        top: 50px;
+        left: 50px;
+        height: 100px;
+        width: 100px;
+      }
+      div:visited {
+        background-color: yellow;
+      }
+      div:hover {
+        background-color: blue;
+      }
+      div:active {
+        background-color: green; /* 클릭을 했을 때, 초록색이되고 초록색이 유지가 되진 않음 */
+      }
+    </style>
+  </head>
+  <body>
+    <b
+      >여기를 누르면
+      <a href="http://www.wikipedia.org/" target="_top">위키피디아</a>
+      <!--링크를 클릭했을 때, 새로운 창으로 띄워줄지, 현재 탭에서 보여줄지 결정 _self-->
+      로 연결됩니다.
+    </b>
+    <div></div>
+  </body>
+</html>
